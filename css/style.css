@@ -26,24 +26,29 @@ h1{
     font-size: 6vw;
 
 }
+
 h2{
-    font-size: 3.5vw;
+    font-size: max(3vw, 19px);
     text-shadow: 0rem 0rem 0.55rem rgb(0, 0, 0);
     text-align: center;
 }
 h3{
-    font-size: 3vw;
+    font-size: max(1rem, 20px);
     text-shadow: 0rem 0rem 0.55rem rgb(0, 0, 0);
     text-align: center;
 }
 p{
-    font-size: 2.5vw;
+    font-size: min(2.5vw, 16px);
+    font-weight: bolder;
     text-align: center;
 }
 
 a{
    color:black ;
    text-shadow: 0rem 0rem 0.55rem rgb(255,215,0);
+   font-size: min(3vw, 18px);
+   font-weight: bolder;
+   text-align: center;  
 }
 a:hover{
     color:black ;
@@ -70,7 +75,7 @@ a:hover{
     border-radius: 5rem;
     max-width: 60vw;
     display: inline-block;
-    text-align:justify;
+    text-align:initial;
 }
 .margin_picture{
     display: flex;
@@ -94,8 +99,8 @@ a:hover{
     height: 30rem;
     border-radius: 5rem;
 }
-nav ul li{
-    font-size: 2vw;
+nav ul li a h3{
+    font-size: 2.5vw;
 }
 .current_a{
     text-decoration: underline;
@@ -111,14 +116,14 @@ nav ul li{
 .card{
     background-color: transparent;
     width: 25vw;
-    height: 50vw;
+    height: 40vh;
     perspective: 1000px;
 
 }
 .card-inner {
     position: relative;
     width: 25vw;
-    height: 50vw;
+    height: 40vh;
     text-align: center;
     transition: transform 1s;
     transform-style: preserve-3d;
@@ -133,6 +138,36 @@ nav ul li{
     border-top-color: rgb(255, 255, 255);
     border-bottom-color: rgb(255, 255, 255);
 }
+.max_f{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border: 1rem solid;
+    border-left-color: rgba(226 0 26);
+    border-right-color: rgba(226 0 26);
+    border-top-color: rgb(174 153 98);
+    border-bottom-color: rgb(174 153 98);
+}
+.max_sp{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border: 1rem solid;
+    border-left-color: rgba(139, 13, 17);
+    border-right-color: rgba(139, 13, 17);
+    border-top-color: rgb(252, 181, 7);
+    border-bottom-color: rgb(252, 181, 7);
+}
+.max_arg{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    border: 1rem solid;
+    border-left-color: rgba(108, 172, 228);
+    border-right-color: rgba(108, 172, 228);
+    border-top-color: rgb(255, 184, 28);
+    border-bottom-color: rgb(255, 184, 28);
+}
 .maxSpace_rm, .info_player{ 
     position: absolute;
     width: 100%;
@@ -140,31 +175,15 @@ nav ul li{
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     
-    /* width: 100%;
-    height: 33rem;
-    border-radius: 4rem;
-    border: 1rem solid;
-    border-left-color: rgba(0, 82, 159, 1);
-    border-right-color: rgba(0, 82, 159, 1);
-    border-top-color: rgb(255, 255, 255);
-    border-bottom-color: rgb(255, 255, 255);
-    line-height:2;
-    border-radius: 5rem;
-    backface-visibility: hidden; */
-
-    
 }
 .info_player{
     border-radius: 5rem;
     border: 1rem solid;
-    border-left-color: rgba(0, 82, 159, 1);
-    border-right-color: rgba(0, 82, 159, 1);
-    border-top-color: rgb(255, 255, 255);
-    border-bottom-color: rgb(255, 255, 255);
-    background-color: rgb(254, 190, 16);
+    background-color: rgb(186, 204, 247);
     transform: rotateY(180deg);
     align-items: center;
     justify-content:center;
+    display: grid;
 }
 
 .flip-card {
@@ -172,4 +191,14 @@ nav ul li{
   width: 100%;
   height:  100%;
   perspective: 1000px;
+}
+button:focus{
+    transform: scale(1.2)  ;
+}
+a:focus{
+    border: 5px  solid blue  ;
+}
+.maxsize{
+    width: 70%;
+    height:  100%;   
 }
