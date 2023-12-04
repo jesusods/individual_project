@@ -11,5 +11,10 @@ https://www.eurosport.com/football/liga/2022-2023/paul-scholes-backs-real-madrid
 
 coding:
 
+W3 in general:
 
-https://www.w3schools.com/howto/howto_css_flip_card.asp
+Flip card inspiration: https://www.w3schools.com/howto/howto_css_flip_card.asp
+Get Computed: https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp
+
+Game:
+Soccer Image: https://opengameart.org/content/soccer-ball
